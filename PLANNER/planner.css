@@ -1,0 +1,110 @@
+:root {
+  --bg: #eef2ff;
+  --card: #ffffff;
+  --text: #0f172a;
+  --primary: #4f46e5;
+  --success: #16a34a;
+}
+
+body.dark {
+  --bg: #020617;
+  --card: #0f172a;
+  --text: #e5e7eb;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+}
+
+header button {
+  margin-top: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 1rem;
+}
+
+section {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: grid;
+  gap: 1rem;
+}
+
+input,
+select {
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+}
+
+button {
+  padding: 0.8rem;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.day-column {
+  background: #f1f5f9;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+body.dark .day-column {
+  background: #020617;
+}
+
+.task {
+  background: var(--primary);
+  color: white;
+  padding: 0.4rem;
+  border-radius: 6px;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.progress-bar {
+  background: #e5e7eb;
+  height: 18px;
+  border-radius: 20px;
+}
+
+#progressFill {
+  height: 100%;
+  width: 0%;
+  background: var(--success);
+  border-radius: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}

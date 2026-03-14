@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fibonacci Program</title>
+  </head>
+  <body>
+    <h2>Fibonacci Series</h2>
+
+    <input type="number" id="num" />
+    <button onclick="findFibonacci()">Calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+      function findFibonacci() {
+        let n = document.getElementById("num").value;
+        let a = 0,
+          b = 1,
+          c;
+        let fib = "";
+
+        for (let i = 1; i <= n; i++) {
+          fib += a + " ";
+          c = a + b;
+          a = b;
+          b = c;
+        }
+
+        document.getElementById("result").innerHTML =
+          "Fibonacci series up to " + n + " terms: " + fib;
+      }
+    </script>
+  </body>
+</html>

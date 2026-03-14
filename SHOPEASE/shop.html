@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShopEase</title>
+    <link rel="stylesheet" href="shop.css" />
+  </head>
+  <body>
+    <header>
+      <h1>🛍️ ShopEase</h1>
+
+      <input type="text" id="searchInput" placeholder="Search products..." />
+
+      <div class="cart-icon" onclick="toggleCart()">
+        🛒 <span id="cartCount">0</span>
+      </div>
+    </header>
+
+    <nav class="categories">
+      <button onclick="filterCategory('all')">All</button>
+      <button onclick="filterCategory('electronics')">Electronics</button>
+      <button onclick="filterCategory('fashion')">Fashion</button>
+      <button onclick="filterCategory('accessories')">Accessories</button>
+    </nav>
+
+    <main class="container">
+      <section class="products" id="productList"></section>
+
+      <aside class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <p class="total">Total: $<span id="totalPrice">0</span></p>
+        <button class="checkout-btn" onclick="checkout()">Checkout</button>
+      </aside>
+    </main>
+
+    <script src="shop.js"></script>
+  </body>
+</html>

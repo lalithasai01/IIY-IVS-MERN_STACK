@@ -1,0 +1,88 @@
+//Internal Code
+<!Doctype html>
+<html>
+<head>
+<title>Login Page-Internal</title>
+<script>
+function checkLogin()
+{
+var user = document.getElementById("uname").value;
+var pass = document.getElementById("pwd").value;
+if(user == "Varshitha" && pass == "Sairam")
+{
+alert("Login Successful");
+}
+else
+{
+alert("Invalid Password or User");
+}
+}
+</script>
+</head>
+<body>
+<h2>Login Page (internal JavaScript)</h2>
+<form>
+Username: <input type="text" id="uname"><br><br>
+Password: <input typr="password" id="pwd"><br><br>
+<input type="button" value="Login" onClick="checkLogin()">
+</form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Page - Internal</title>
+
+<script>
+function checkLogin()
+{
+var user = document.getElementById("uname").value;
+var pass = document.getElementById("pwd").value;
+
+if(user == "Varshitha" && pass == "Sairam")
+{
+alert("Login Successful");
+}
+else
+{
+alert("Invalid Username or Password");
+}
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Login Page (Internal JavaScript)</h2>
+
+<form>
+Username: <input type="text" id="uname"><br><br>
+
+Password: <input type="password" id="pwd"><br><br>
+
+<input type="button" value="Login" onclick="checkLogin()">
+</form>
+
+</body>
+</html>
+//External Code
+
+<!DOCTYPE>
+<html>
+<head>
+<title>Login page - External JS</title>
+<script src="login.js"></script>
+</head>
+<body>
+<h2>Login Page</h2>
+<form>
+
+Username: <input type="text" id="uname"><br><br>
+Username: <input type="Password" id="pwd"><br><br>
+<input type="button" value="Login" onclick="checkLogin()";
+
+</form>
+</head>
+</html>

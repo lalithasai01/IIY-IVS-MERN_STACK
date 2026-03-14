@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cominator selector</title>
+    <style>
+      div p {
+        color: rgb(0, 104, 104);
+      }
+
+      div > p {
+        color: blue;
+      }
+
+      h1 + p {
+        color: cornflowerblue;
+      }
+
+      h1 ~ p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Child selector</h2>
+      <p>Descendent selector example</p>
+    </div>
+    <h1>Heading</h1>
+    <p>Adjacent sibling</p>
+    <p>General sibling</p>
+  </body>
+</html>
